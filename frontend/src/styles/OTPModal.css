@@ -1,0 +1,127 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(11, 39, 34, 0.68);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  padding: 2.5rem 2.2rem 2.1rem;
+  width: 100%;
+  max-width: 440px;
+  position: relative;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: var(--text-main);
+}
+
+.modal-lock { margin: 0 auto 1.2rem; width: 2.5rem; height: 2.5rem; }
+.modal-content .eyebrow { margin-bottom: .35rem; }
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.modal-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 0 auto 1.7rem;
+  max-width: 320px;
+}
+.modal-subtitle strong { color: var(--text-main); font-weight: 600; }
+
+.otp-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.otp-input {
+  width: 3rem;
+  height: 3.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  outline: none;
+  transition: border-color 0.2s;
+  color: var(--text-main);
+}
+
+.otp-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(23, 107, 91, 0.16);
+  transform: translateY(-2px);
+}
+
+.otp-input.error {
+  border-color: var(--error-color);
+  color: var(--error-color);
+}
+
+.modal-error {
+  color: var(--error-color);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+.expiry-text { color: var(--text-muted); font-size: .8rem; margin: -.4rem 0 1.4rem; }
+.expiry-text.expired { color: var(--error-color); font-weight: 600; }
+
+.modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.verify-btn {
+  width: 100%;
+}
+
+.skip-btn {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.skip-btn:hover {
+  text-decoration: underline;
+}
+.resend-btn { border: 0; background: none; color: var(--primary-color); font-weight: 600; cursor: pointer; font-size: .85rem; }
+.resend-btn:disabled, .skip-btn:disabled { color: #9aa9a4; cursor: not-allowed; }
+
+@media (max-width: 420px) {
+  .modal-content { padding: 2.3rem 1.1rem 1.7rem; }
+  .otp-container { gap: .3rem; }
+  .otp-input { width: 2.55rem; height: 3.2rem; }
+}

@@ -1,0 +1,55 @@
+.user-greeting {
+  background-color: #f0fdf4; /* Light green bg */
+  color: #166534; /* Dark green text */
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  border: 1px solid #bbf7d0;
+}
+
+.user-icon {
+  font-size: 1.25rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.recognizing-text {
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.valid-text {
+  color: var(--success-color);
+  font-weight: 500;
+}
+
+.page-container.checkout-page { max-width: 1020px; }
+.checkout-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 2rem; }
+.checkout-badge { color: var(--primary-color); background: #e2f1eb; padding: .55rem .8rem; border-radius: 999px; font-size: .78rem; font-weight: 700; }
+.checkout-layout { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(250px, .6fr); gap: 1.5rem; align-items: start; }
+.checkout-card { padding: 2.2rem; }
+.guest-greeting { background: #f2f7f5; color: var(--text-muted); border-color: var(--border-color); }
+.status-dot { width: .55rem; height: .55rem; border-radius: 50%; background: #36a779; }
+.guest-text { color: var(--text-muted); font-weight: 500; }
+.security-panel { background: #123c35; color: #f5fbf8; padding: 2rem; border-radius: var(--radius); }
+.security-panel .security-icon { margin-bottom: 1.5rem; }
+.security-panel h2 { font-family: 'Manrope', sans-serif; font-size: 1.25rem; margin-bottom: .6rem; }
+.security-panel p { color: #b8d1c8; font-size: .88rem; }
+.security-panel ul { list-style: none; padding: 0; display: grid; gap: .85rem; margin: 1.6rem 0; font-size: .86rem; }
+.guest-note { border-top: 1px solid #326056; padding-top: 1.2rem; color: #b8d1c8; font-size: .78rem; line-height: 1.5; }
+
+@media (max-width: 760px) {
+  .checkout-heading { align-items: start; gap: 1rem; }
+  .checkout-badge { font-size: .7rem; }
+  .checkout-layout { grid-template-columns: 1fr; }
+  .checkout-card { padding: 1.5rem 1.2rem; }
+}

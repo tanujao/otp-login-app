@@ -1,0 +1,71 @@
+.success-card {
+  padding: 3rem 2rem;
+}
+
+.success-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--success-bg);
+  color: var(--success-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 1.5rem auto;
+  border: 2px solid var(--success-color);
+}
+
+.code-display {
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 2px dashed var(--success-color);
+  border-radius: var(--radius);
+  background-color: #f8fafc;
+}
+
+.info-box {
+  background-color: var(--success-bg);
+  color: #166534; /* darker green */
+  padding: 1rem;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.link-container {
+  margin-top: 1.5rem;
+}
+
+.page-container.register-page { max-width: 1040px; }
+.register-layout { display: grid; grid-template-columns: minmax(260px, .82fr) minmax(420px, 1.18fr); background: #123c35; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); }
+.register-aside { color: #f4fbf7; padding: 3.5rem 2.8rem; background: linear-gradient(145deg, #164b41, #0d302b); }
+.aside-mark, .security-icon, .modal-lock { display: grid; place-items: center; width: 2.7rem; height: 2.7rem; border-radius: 10px; background: #d7eee4; color: var(--primary-color); font-size: 1.25rem; margin-bottom: 3rem; }
+.aside-eyebrow { color: #9fd1bd; }
+.register-aside h1 { font-family: 'Manrope', sans-serif; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.08; margin-bottom: 1rem; }
+.aside-copy { color: #b8d1c8; max-width: 22rem; }
+.feature-list { list-style: none; padding: 0; margin-top: 2.7rem; display: grid; gap: 1rem; color: #dceee7; }
+.feature-list span, .security-panel li span { color: #77c6a8; font-weight: 700; margin-right: .6rem; }
+.register-card { border-radius: 0; padding: 2.8rem; }
+.success-card { padding: 3.5rem 2rem; max-width: 560px; margin: 0 auto; }
+.code-display { color: var(--text-main); border: 1px dashed #a8cec0; }
+.copy-button { min-width: 150px; }
+.copy-error { color: var(--error-color); font-size: .8rem; margin: -.5rem 0 1rem; }
+.progress-row { display: flex; align-items: center; gap: .55rem; margin-bottom: 2.1rem; color: #9aa9a4; font-size: .72rem; font-weight: 700; white-space: nowrap; }
+.progress-step.active, .progress-step.complete { color: var(--primary-color); }
+.progress-line { height: 1px; width: 2rem; background: var(--border-color); }
+.progress-line.complete { background: #8bcab3; }
+
+@media (max-width: 760px) {
+  .register-layout { grid-template-columns: 1fr; }
+  .register-aside { padding: 2rem; }
+  .aside-mark { margin-bottom: 1.6rem; }
+  .feature-list { margin-top: 1.5rem; grid-template-columns: 1fr 1fr; font-size: .85rem; }
+  .register-card { padding: 2rem 1.25rem; }
+  .progress-row { gap: .35rem; font-size: .65rem; }
+  .progress-line { width: 1rem; }
+}
